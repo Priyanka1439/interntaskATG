@@ -1,0 +1,1237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Intern task</title>
+  </head>
+  <body>
+     <!-- Nav Bar -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <img src="./images/logo.png" width="100%" height="30" alt="">
+        </a>
+
+        <div class="form-group has-search" style="padding-top: 20px;">
+          <span class="fa fa-search form-control-feedback"></span>
+          <input type="text" class="form-control" placeholder="Search for your favorite groups in ATG">
+        </div>
+
+        <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo">Create account. It’s free!</button>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color: #c9f5d4;">
+                <p class="modal-title" id="exampleModalLabel">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h5>Create Account</h5>
+                    <form>
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="First name" style="background-color: whitesmoke; border: 1px solid grey;">
+                        </div>
+                        <div class="col">
+                          <input type="text" class="form-control" placeholder="Last name" style="background-color: whitesmoke; border: 1px solid grey;">
+                        </div>
+                      </div>
+                      <input type="email" class="form-control" placeholder="Email" style="background-color: whitesmoke; border: 1px solid grey;">
+                      <input type="password" class="form-control" placeholder="Password" style="background-color: whitesmoke; border: 1px solid grey;">
+                      <input type="password" class="form-control" placeholder="Confirm Password" style="background-color: whitesmoke; border: 1px solid grey;">
+                      <button type="button" class="btn btn-primary btn-block" style="margin-top: 20px; border-radius: 60px;">Create Account</button>
+
+                      <button type="button" class="btn btn-outline-dark btn-block" style="margin-top: 20px;"><i class="fa fa-facebook-square" aria-hidden="true" style="margin:8px"></i>Sign up with Facebook</button>
+                      <button type="button" class="btn btn-outline-dark btn-block" style="margin-top: 20px;"><i class="fa fa-google" aria-hidden="true"style="margin:8px"></i>Sign up with Google</button>
+                    </form>
+                  </div>
+                   <div class="col">
+                     <p style="float: right;">Already have an account? <button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal1" data-dismiss="modal" style="color:blue;">Sign In</button></p>
+                     <img src="./images/login.png" width="100%" height="300px">
+                     <p style="float: right;">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                   </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header" style="background-color: #c9f5d4;">
+                <p class="modal-title" id="exampleModalLabel">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="container">
+                <div class="row">
+                  <div class="col">
+                    <h5>Sign In</h5>
+                    <form>
+                      <input type="email" class="form-control" placeholder="Email" style="background-color: whitesmoke; border: 1px solid grey;">
+                      <input type="password" class="form-control" placeholder="Password" style="background-color: whitesmoke; border: 1px solid grey;">
+                      <button type="button" class="btn btn-primary btn-block" style="margin-top: 20px; border-radius: 60px;">Sign In</button>
+
+                      <button type="button" class="btn btn-outline-dark btn-block" style="margin-top: 20px;"><i class="fa fa-facebook-square" aria-hidden="true" style="margin:8px"></i>Sign up with Facebook</button>
+                      <button type="button" class="btn btn-outline-dark btn-block" style="margin-top: 20px;"><i class="fa fa-google" aria-hidden="true"style="margin:8px"></i>Sign up with Google</button>
+                      <div class="d-flex justify-content-center" style="margin-top: 30px;">
+                        <a href="#" style="align-content: center;">Forgot Password?</a>
+                      </div>
+                    </form>
+                  </div>
+                   <div class="col">
+                     <p style="float: right; font-size: 15px;">Don’t have an account yet?<button type="button" class="btn btn-sm" data-toggle="modal" data-target="#exampleModal" data-dismiss="modal" style="color:blue;">Create new for free!</button></p>
+                     <img src="./images/login.png" width="100%" height="300px">
+                     <p style="float: right;">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                   </div>
+                </div>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </nav>
+    <!-- Nav Bar -->
+
+    <!-- Image -->
+      <div class="container-xxl test image" width="100%" style="position: relative;">
+        <img src="./images/background.png" width="100%" height="440px" style="position: relative;">
+        <h5 class="heading1" style="position: absolute;">Computer Engineering</h5>
+        <p class= "heading2" style="position: absolute;">142,765 Computer Engineers follow this</p>
+      </div>
+    <!-- Image -->
+
+    <!-- Tabs -->
+      <div class="container">
+        <ul class="tab">
+          <li><a href="#" class="tablinks" onclick="openCity(event, 'All Post')">All Post</a></li>
+          <li><a href="#" class="tablinks" onclick="openCity(event, 'Article')">Article</a></li>
+          <li><a href="#" class="tablinks" onclick="openCity(event, 'Event')">Event</a></li>
+          <li><a href="#" class="tablinks" onclick="openCity(event, 'Education')">Education</a></li>
+          <li><a href="#" class="tablinks" onclick="openCity(event, 'Job')">Job</a></li>
+          <li style="float:right; padding-top: 10px;">
+
+            <div class="btn-group">
+              <button class="btn btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="margin: 2px; background-color: lightgray;">
+                Write a Post
+              </button>
+              <div class="dropdown-menu">
+                ...
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-sm btn-primary pushme2 with-color" style="margin: 2px;"><i class="fa fa-user-plus" style="margin: 2px;"></i>Join Group</button>
+          </li>
+        </ul>
+
+
+        <div id="All Post" class="tabcontent">
+
+          <div class="row">
+
+          <div class="col-sm-8">
+          <!-- Card1 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px; margin-top: 30px">
+            <img src="./images/Card1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-pencil" style="margin: 2px;"></i>
+                <h7>Article</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile1.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarthak Kamra</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card1 -->
+
+          <!-- Card2 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-book" style="margin: 2px;"></i>
+                <h7>Education</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile2.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarah West</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card2 -->
+
+          <!-- Card3 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-calendar-o" style="margin: 2px;"></i>
+                <h7>Meetup</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:350px">
+                <div class="d-flex">
+                  <i class="fa fa-calendar" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Fri, 12 Oct, 2018</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ahmedabad, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: red; font-weight: bold;">Visit Website</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile3.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ronal Jones</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card3 -->
+
+          <!-- Card4 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-briefcase" style="margin: 2px;"></i>
+                <h7>Job</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Software Developer</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:450px">
+                <div class="d-flex">
+                  <i class="fa fa-briefcase" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Innovaccer Analytics Private Ltd.</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Noida, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: green; font-weight: bold;">Apply on Timesjobs</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile4.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Joseph Gray</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card4 -->
+          </div>
+
+          <div class="col-sm-4" style="margin-top: 30px">
+            <i class="fa fa-map-marker" style="margin: 2px;"></i>
+            <input placeholder="Noida, India" class="inputplace"> <i class="fa fa-pencil" style="margin: 2px;"></i></input>
+            <div class="d-flex">
+              <i class="fa fa-info-circle" style="margin: 7px; margin-top: 15px; color: grey;"></i>
+              <p style="margin: 7px; margin-top: 10px; color: grey;">Your location will help us serve better and extend a personalised experience.</p>
+            </div>
+          </div>
+
+        </div>
+
+        </div>
+
+        <div id="Article" class="tabcontent">
+          <div class="row">
+
+          <div class="col-sm-8">
+          <!-- Card1 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px; margin-top: 30px">
+            <img src="./images/Card1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-pencil" style="margin: 2px;"></i>
+                <h7>Article</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile1.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarthak Kamra</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card1 -->
+
+          <!-- Card2 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-book" style="margin: 2px;"></i>
+                <h7>Education</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile2.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarah West</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card2 -->
+
+          <!-- Card3 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-calendar-o" style="margin: 2px;"></i>
+                <h7>Meetup</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:350px">
+                <div class="d-flex">
+                  <i class="fa fa-calendar" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Fri, 12 Oct, 2018</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ahmedabad, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: red; font-weight: bold;">Visit Website</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile3.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ronal Jones</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card3 -->
+
+          <!-- Card4 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-briefcase" style="margin: 2px;"></i>
+                <h7>Job</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Software Developer</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:450px">
+                <div class="d-flex">
+                  <i class="fa fa-briefcase" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Innovaccer Analytics Private Ltd.</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Noida, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: green; font-weight: bold;">Apply on Timesjobs</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile4.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Joseph Gray</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card4 -->
+          </div>
+
+          <div class="col-sm-4" style="margin-top: 30px">
+            <i class="fa fa-map-marker" style="margin: 2px;"></i>
+            <input placeholder="Noida, India" class="inputplace"> <i class="fa fa-pencil" style="margin: 2px;"></i></input>
+            <div class="d-flex">
+              <i class="fa fa-info-circle" style="margin: 7px; margin-top: 15px; color: grey;"></i>
+              <p style="margin: 7px; margin-top: 10px; color: grey;">Your location will help us serve better and extend a personalised experience.</p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+        <div id="Event" class="tabcontent">
+          <div class="row">
+
+          <div class="col-sm-8">
+          <!-- Card1 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px; margin-top: 30px">
+            <img src="./images/Card1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-pencil" style="margin: 2px;"></i>
+                <h7>Article</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile1.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarthak Kamra</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card1 -->
+
+          <!-- Card2 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-book" style="margin: 2px;"></i>
+                <h7>Education</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile2.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarah West</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card2 -->
+
+          <!-- Card3 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-calendar-o" style="margin: 2px;"></i>
+                <h7>Meetup</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:350px">
+                <div class="d-flex">
+                  <i class="fa fa-calendar" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Fri, 12 Oct, 2018</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ahmedabad, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: red; font-weight: bold;">Visit Website</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile3.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ronal Jones</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card3 -->
+
+          <!-- Card4 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-briefcase" style="margin: 2px;"></i>
+                <h7>Job</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Software Developer</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:450px">
+                <div class="d-flex">
+                  <i class="fa fa-briefcase" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Innovaccer Analytics Private Ltd.</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Noida, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: green; font-weight: bold;">Apply on Timesjobs</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile4.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Joseph Gray</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card4 -->
+          </div>
+
+          <div class="col-sm-4" style="margin-top: 30px">
+            <i class="fa fa-map-marker" style="margin: 2px;"></i>
+            <input placeholder="Noida, India" class="inputplace"> <i class="fa fa-pencil" style="margin: 2px;"></i></input>
+            <div class="d-flex">
+              <i class="fa fa-info-circle" style="margin: 7px; margin-top: 15px; color: grey;"></i>
+              <p style="margin: 7px; margin-top: 10px; color: grey;">Your location will help us serve better and extend a personalised experience.</p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+        <div id="Education" class="tabcontent">
+          <div class="row">
+
+          <div class="col-sm-8">
+          <!-- Card1 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px; margin-top: 30px">
+            <img src="./images/Card1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-pencil" style="margin: 2px;"></i>
+                <h7>Article</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile1.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarthak Kamra</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card1 -->
+
+          <!-- Card2 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-book" style="margin: 2px;"></i>
+                <h7>Education</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile2.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarah West</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card2 -->
+
+          <!-- Card3 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-calendar-o" style="margin: 2px;"></i>
+                <h7>Meetup</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:350px">
+                <div class="d-flex">
+                  <i class="fa fa-calendar" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Fri, 12 Oct, 2018</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ahmedabad, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: red; font-weight: bold;">Visit Website</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile3.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ronal Jones</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card3 -->
+
+          <!-- Card4 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-briefcase" style="margin: 2px;"></i>
+                <h7>Job</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Software Developer</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:450px">
+                <div class="d-flex">
+                  <i class="fa fa-briefcase" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Innovaccer Analytics Private Ltd.</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Noida, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: green; font-weight: bold;">Apply on Timesjobs</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile4.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Joseph Gray</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card4 -->
+          </div>
+
+          <div class="col-sm-4" style="margin-top: 30px">
+            <i class="fa fa-map-marker" style="margin: 2px;"></i>
+            <input placeholder="Noida, India" class="inputplace"> <i class="fa fa-pencil" style="margin: 2px;"></i></input>
+            <div class="d-flex">
+              <i class="fa fa-info-circle" style="margin: 7px; margin-top: 15px; color: grey;"></i>
+              <p style="margin: 7px; margin-top: 10px; color: grey;">Your location will help us serve better and extend a personalised experience.</p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+
+        <div id="Job" class="tabcontent">
+          <div class="row">
+
+          <div class="col-sm-8">
+          <!-- Card1 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px; margin-top: 30px">
+            <img src="./images/Card1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-pencil" style="margin: 2px;"></i>
+                <h7>Article</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">What if famous brands had regular fonts? Meet RegulaBrands!</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile1.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarthak Kamra</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card1 -->
+
+          <!-- Card2 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-book" style="margin: 2px;"></i>
+                <h7>Education</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Tax Benefits for Investment under National Pension Scheme launched by Government</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              <p class="card-text">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</p>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile2.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Sarah West</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card2 -->
+
+          <!-- Card3 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <img src="./images/Card3.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-calendar-o" style="margin: 2px;"></i>
+                <h7>Meetup</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Finance & Investment Elite Social Mixer @Lujiazui</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:350px">
+                <div class="d-flex">
+                  <i class="fa fa-calendar" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Fri, 12 Oct, 2018</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ahmedabad, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: red; font-weight: bold;">Visit Website</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile3.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Ronal Jones</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card3 -->
+
+          <!-- Card4 -->
+          <div class="card" style="max-width: 40rem; margin-bottom: 30px;">
+            <div class="card-body">
+              <div style="margin-bottom: 5px;">
+                <i class="fa fa-briefcase" style="margin: 2px;"></i>
+                <h7>Job</h7>
+              </div>
+              <div class="d-flex justify-content-between">
+                <h5 class="card-title" style="max-width: 30rem;">Software Developer</h5>
+                <div style="float:right;">
+                  <div class="btn-group dropleft">
+                    <button class="btn btn-sm" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     <i class="fa fa-ellipsis-h"></i>
+                    </button>
+                    <div class="dropdown-menu">
+                      <button class="dropdown-item" type="button">Edit</button>
+                      <button class="dropdown-item" type="button">Report</button>
+                      <button class="dropdown-item" type="button">Option 3</button>
+                    </div>
+                  </div>
+                  </div>
+              </div>
+              
+              <div class="d-flex justify-content-sm-between" style="max-width:450px">
+                <div class="d-flex">
+                  <i class="fa fa-briefcase" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Innovaccer Analytics Private Ltd.</p>
+                </div>
+                <div class="d-flex">
+                  <i class="fa fa-map-marker" aria-hidden="true" style="margin-top: 10px; margin-bottom: 20px;"></i>
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Noida, India</p>
+                </div>
+              </div>
+
+              <button type="button" class="btn btn-outline-dark btn-sm btn-block" style="margin-top: 10px; margin-bottom: 20px; color: green; font-weight: bold;">Apply on Timesjobs</button>
+
+              <div class="d-flex justify-content-between">
+                <div class="d-flex justify-content-start">
+                  <img src="./images/profile4.png" alt="...">
+                  <p style="margin-top: 5px; margin-left: 5px; font-weight: bold;">Joseph Gray</p>
+                </div>
+
+                <div class="d-flex justify-content-end" style="float:right;">
+                    <i class="fa fa-eye" aria-hidden="true" style="margin-top: 18px;"></i>
+                    <p style="margin-top: 13px; margin-left: 5px; color: gray; margin-right: 5px;">1.4k views</p>
+                    <button type="button" class="btn btn-sm btn-secondary" style="height: 30px; margin-top: 13px;">
+                      <i class="fa fa-share-alt" aria-hidden="true"></i>
+                    </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <!-- Card4 -->
+          </div>
+
+          <div class="col-sm-4" style="margin-top: 30px">
+            <i class="fa fa-map-marker" style="margin: 2px;"></i>
+            <input placeholder="Noida, India" class="inputplace"> <i class="fa fa-pencil" style="margin: 2px;"></i></input>
+            <div class="d-flex">
+              <i class="fa fa-info-circle" style="margin: 7px; margin-top: 15px; color: grey;"></i>
+              <p style="margin: 7px; margin-top: 10px; color: grey;">Your location will help us serve better and extend a personalised experience.</p>
+            </div>
+          </div>
+
+        </div>
+        </div>
+      </div>
+    <!-- Tabs -->
+
+      <script src="script.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
